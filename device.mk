@@ -76,9 +76,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.display.config@1.0
 
-# Doze
+# Device-specific settings
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    XiaomiParts
 
 # FM
 PRODUCT_PACKAGES += \
