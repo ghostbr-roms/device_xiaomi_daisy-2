@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     tinymix
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/audio_effects.xml:system/etc/audio_effects.xml
+
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
@@ -70,7 +74,8 @@ PRODUCT_PACKAGES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    init.target.rc
+    init.target.rc \
+    init.qcom.rc
 
 # Display
 PRODUCT_PACKAGES += \
