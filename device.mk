@@ -25,8 +25,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/daisy/daisy-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -123,10 +122,6 @@ PRODUCT_COPY_FILES += \
 # Telephony
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
