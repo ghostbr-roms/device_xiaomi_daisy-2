@@ -122,6 +122,10 @@ PRODUCT_PACKAGES += \
 # Offmode charging
 PRODUCT_PACKAGES += \
     chargeonlymode
+	
+# OTA
+PRODUCT_PACKAGES += \
+    Updates		
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
