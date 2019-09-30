@@ -89,6 +89,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_1="" \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3=""
+    
+# OTA
+PRODUCT_PROPERTY_OVERRIDES += \
+    lineage.updater.uri=https://raw.githubusercontent.com/ghostbr-roms/api/master/daisy.json
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
