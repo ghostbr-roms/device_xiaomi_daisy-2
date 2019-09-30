@@ -22,12 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
 # Inherit some common BeastROMs stuff.
-BEAST_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/beast/config/common.mk)
+$(call inherit-product, vendor/legion/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := beast_daisy
+PRODUCT_NAME := legion_daisy
 PRODUCT_DEVICE := daisy
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI A2 Lite
@@ -44,3 +43,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "xiaomi/daisy/daisy_sprout:9/PKQ1.180917.001/V10.0.9.0.PDLMIXM:user/release-keys"
 
 TARGET_VENDOR := Xiaomi
+LEGION_MAINTAINER := GhostBR
+LEGION_BUILD_TYPE := UNOFFICIAL
+
+TARGET_BOOT_ANIMATION_RES := 1080
