@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/legion_daisy.mk
+    $(LOCAL_DIR)/cos_daisy.mk
