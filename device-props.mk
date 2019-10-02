@@ -109,3 +109,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.use_fifo_ui=1
+    
+# Setting the DPI value that is actually sane
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.sf.lcd_density=401
